@@ -1,0 +1,14 @@
+name = "hono-firebase-chat"
+main = "src/index.ts"
+compatibility_date = "2023-12-01"
+
+[build]
+command = ""
+[build.upload]
+format = "modules"
+main = "./index.js"
+
+[[build.upload.rules]]
+type = "CompiledWasm"
+globs = ["**/*.wasm"]
+fallthrough = true
